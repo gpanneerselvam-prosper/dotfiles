@@ -1,5 +1,7 @@
 mkdir ~/.vim/swaps
 mkdir ~/.vim/backup
+mkdir ~/.vim/backups
+mkdir ~/.vim/undo
 
 cp .git-prompt.sh ~/.git-prompt.sh
 

@@ -57,10 +57,24 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # http://stackoverflow.com/questions/13804382/how-to-automatically-run-bin-bash-login-automatically-in-the-embeded-termin
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 #prompt_git
 source ~/.git-prompt.sh
 
 #rbenv
 eval "$(rbenv init -)"
+
+#java
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH="$JAVA_HOME:$PATH";
+export PATH="$JAVA_HOME/bin:$PATH";
+
+#gradle
+export GRADLE_HOME=/usr/local/opt/gradle/libexec
+export PATH="$GRADLE_HOME:$PATH";
+export PATH="$GRADLE_HOME/bin:$PATH";
+
+#nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh

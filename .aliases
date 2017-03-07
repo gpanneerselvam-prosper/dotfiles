@@ -5,6 +5,8 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
+alias ll="ls -l"
+alias llm="ls -l --block-size=MB"
 
 # Shortcuts
 alias d="cd ~/Dropbox"
@@ -18,7 +20,14 @@ alias v="vim"
 alias s="subl ."
 alias o="open"
 alias oo="open ."
-alias dev="cd ~/Developer"
+
+# SSH
+alias ssh-hulk="ssh -i ~/svc-bi-direct-mail-prod.pem centos@10.226.30.190"
+alias ssh-hmas="ssh -i ~/svc-bi-direct-mail-prod.pem ec2-user@10.226.29.63"
+
+# SCP
+#alias scp-hulktolocal="scp -i ~/svc-bi-direct-mail-prod.pem centos@10.226.30.190:"
+#alias scp-hmastolocal="scp -i ~/svc-bi-direct-mail-prod.pem ec2-user@10.226.29.63:"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
