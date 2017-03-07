@@ -67,11 +67,13 @@ eval "$(rbenv init -)"
 
 #java
 export JAVA_HOME=$(/usr/libexec/java_home)
+launchctl setenv JAVA_HOME $(/usr/libexec/java_home)
 export PATH="$JAVA_HOME:$PATH";
 export PATH="$JAVA_HOME/bin:$PATH";
 
 #gradle
 export GRADLE_HOME=/usr/local/opt/gradle/libexec
+launchctl setenv GRADLE_HOME /usr/local/opt/gradle/libexec
 export PATH="$GRADLE_HOME:$PATH";
 export PATH="$GRADLE_HOME/bin:$PATH";
 
