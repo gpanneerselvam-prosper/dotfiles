@@ -20,6 +20,8 @@ alias v="vim"
 alias s="subl ."
 alias o="open"
 alias oo="open ."
+alias gitconfig-prosper="git config user.email gpanneerselvam@prosper.com; git config user.name Govind;"
+alias gitconfig-personal="git config user.email imgovind@live.com; git config user.name Govind;"
 
 # SSH
 alias ssh-hulk="ssh -i ~/svc-bi-direct-mail-prod.pem centos@10.226.30.190"
