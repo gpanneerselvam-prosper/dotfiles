@@ -26,6 +26,11 @@ alias gitconfig-personal="git config user.email imgovind@live.com; git config us
 # SSH
 alias ssh-hulk="ssh -i ~/svc-bi-direct-mail-prod.pem centos@10.226.30.190"
 alias ssh-hmas="ssh -i ~/svc-bi-direct-mail-prod.pem ec2-user@10.226.29.63"
+alias ssh-devt="ssh -A devtools01.prod.lvd1.pspr.co"
+alias ssh-risk="ssh -i ~/svc-bi-direct-mail-prod.pem ec2-user@10.226.16.188"
+
+alias ssh-sgweb="ssh -i ~/sg-ap-south.pem centos@35.154.148.38"
+alias ssh-tbweb="ssh -i ~/tb-ap-south.pem centos@35.154.161.88"
 
 # SCP
 #alias scp-hulktolocal="scp -i ~/svc-bi-direct-mail-prod.pem centos@10.226.30.190:"

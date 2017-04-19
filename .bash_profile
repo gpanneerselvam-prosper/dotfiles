@@ -77,6 +77,18 @@ launchctl setenv GRADLE_HOME /usr/local/opt/gradle/libexec
 export PATH="$GRADLE_HOME:$PATH";
 export PATH="$GRADLE_HOME/bin:$PATH";
 
+#maven
+export MAVEN_HOME=/usr/local/opt/maven/libexec
+launchctl setenv MAVEN_HOME /usr/local/opt/maven/libexec
+export PATH="$MAVEN_HOME:$PATH";
+export PATH="$MAVEN_HOME/bin:$PATH";
+
+#jboss
+export JBOSS_HOME=/Users/gpanneerselvam/jboss/jboss-eap-6.3
+launchctl setenv JBOSS_HOME /Users/gpanneerselvam/jboss/jboss-eap-6.3
+export PATH="$JBOSS_HOME:$PATH";
+export PATH="$JBOSS_HOME/bin:$PATH";
+
 #nvm
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh

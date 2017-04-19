@@ -56,6 +56,9 @@ brew cask install java
 # Install gradle
 brew install gradle
 
+# Install maven
+brew install maven
+
 # Install nvm
 brew install nvm
 mkdir ~/.nvm
