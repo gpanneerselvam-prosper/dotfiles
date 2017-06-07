@@ -22,8 +22,11 @@ alias v="vim"
 alias s="subl ."
 alias o="open"
 alias oo="open ."
+
+# Git 
 alias gitconfig-prosper="git config user.email gpanneerselvam@prosper.com; git config user.name Govind;"
 alias gitconfig-personal="git config user.email imgovind@live.com; git config user.name Govind;"
+alias gitlog="git log --oneline --graph --decorate -10"
 
 # SSH
 alias ssh-hulk="ssh -i ~/svc-bi-direct-mail-prod.pem centos@10.226.30.190"
@@ -164,4 +167,5 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias reload="exec $SHELL -l"
 
 # Faster npm for Europeans
-command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
+# command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
+

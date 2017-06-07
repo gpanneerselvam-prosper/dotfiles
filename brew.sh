@@ -62,10 +62,7 @@ brew install maven
 # Install nvm
 brew install nvm
 mkdir ~/.nvm
-echo ‘#nvm’ >> ~/.bash_profile
 # echo '[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh' >> ~/.bash_profile
-echo 'export NVM_DIR=~/.nvm' >> ~/.bash_profile
-echo 'source $(brew --prefix nvm)/nvm.sh' >> ~/.bash_profile
 
 # Install node
 nvm install 6.10.0
