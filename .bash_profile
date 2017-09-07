@@ -92,3 +92,10 @@ export PATH="$JBOSS_HOME/bin:$PATH";
 #nvm
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+#ssh
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent -s`
+  ssh-add
+fi
+ssh-add
