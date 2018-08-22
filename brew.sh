@@ -47,6 +47,15 @@ brew install python3
 pip3 install virtualenv
 pip3 install virtualenvwrapper
 
+# install unix odbc
+brew install unixodbc
+
+# ms sql odbc
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew tap microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release
+brew update
+brew install --no-sandbox msodbcsql17 mssql-tools
+
 # Install java
 brew tap caskroom/cask
 brew install brew-cask
